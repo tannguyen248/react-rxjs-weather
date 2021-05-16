@@ -7,13 +7,15 @@ import LayoutSection from "./components/LayoutSection";
 import SearchInput from "./components/SearchInput";
 import BackdropSpinner from "./components/BackdropSpinner";
 import WeatherBoard from "./components/WeatherBoard";
-import { from, throwError } from "rxjs";
+import { from, merge, throwError } from "rxjs";
 import { ajax } from "rxjs/ajax";
 import {
   debounceTime,
   distinctUntilChanged,
   filter,
+  first,
   map,
+  pluck,
   retry,
   switchMap,
   tap,
