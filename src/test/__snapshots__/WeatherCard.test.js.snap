@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherCard should display weather card with data 1`] = `
+<div
+  className="text-center card"
+>
+  <img
+    className="card-img-top"
+    src="https://www.metaweather.com/static/img/weather/c.svg"
+  />
+  <div
+    className="card-body"
+  >
+    <div
+      className="card-title h5"
+    >
+      1
+       (
+      <span>
+        1
+        -
+        1
+      </span>
+      )
+    </div>
+    <p
+      className="card-text"
+    >
+      <span>
+        10
+        <sup
+          className="sc-bdfBwQ kqJIKH"
+        >
+          o
+        </sup>
+      </span>
+       -
+       
+      <span>
+        5
+        <sup
+          className="sc-bdfBwQ kqJIKH"
+        >
+          o
+        </sup>
+      </span>
+    </p>
+  </div>
+</div>
+`;

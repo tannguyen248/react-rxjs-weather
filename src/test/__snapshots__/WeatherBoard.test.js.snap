@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeatherBoard should display weather board correctly 1`] = `
+<div
+  className="card"
+>
+  <div
+    className="card-header"
+  >
+    <div
+      className="nav card-header-pills nav-pills"
+      onKeyDown={[Function]}
+    >
+      <div
+        className="nav-item"
+        onClick={[Function]}
+      >
+        <a
+          className="nav-link"
+          data-rb-event-key="2487956"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          San Francisco
+        </a>
+      </div>
+      <div
+        className="nav-item"
+        onClick={[Function]}
+      >
+        <a
+          className="nav-link"
+          data-rb-event-key="2487889"
+          href="#"
+          onClick={[Function]}
+          onKeyDown={[Function]}
+          role="button"
+        >
+          San Diego
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    className="card-body"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-lg-auto col-md-4 col-6"
+      >
+        <div
+          className="sc-gsTCUz gAVgso"
+        >
+          <div
+            className="text-center card"
+          >
+            <img
+              className="card-img-top"
+              src="https://www.metaweather.com/static/img/weather/s.svg"
+            />
+            <div
+              className="card-body"
+            >
+              <div
+                className="card-title h5"
+              >
+                2
+                 (
+                <span>
+                  1
+                  -
+                  1
+                </span>
+                )
+              </div>
+              <p
+                className="card-text"
+              >
+                <span>
+                  10
+                  <sup
+                    className="sc-bdfBwQ kqJIKH"
+                  >
+                    o
+                  </sup>
+                </span>
+                 -
+                 
+                <span>
+                  5
+                  <sup
+                    className="sc-bdfBwQ kqJIKH"
+                  >
+                    o
+                  </sup>
+                </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WeatherBoard should not display weather board when data wrong 1`] = `null`;
