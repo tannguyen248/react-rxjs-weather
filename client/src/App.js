@@ -7,15 +7,12 @@ import LayoutSection from "./components/LayoutSection";
 import SearchInput from "./components/SearchInput";
 import BackdropSpinner from "./components/BackdropSpinner";
 import WeatherBoard from "./components/WeatherBoard";
-import { from, merge, throwError } from "rxjs";
 import { ajax } from "rxjs/ajax";
 import {
   debounceTime,
   distinctUntilChanged,
   filter,
-  first,
   map,
-  pluck,
   retry,
   switchMap,
   tap,
@@ -45,6 +42,7 @@ const searchLocation = (action$) => {
 };
 
 const App = () => {
+  const [isLoading, setLoading] = useState(false);
   const [query, setQuery] = useState("");
   const [locations, dispatchQuery] = useObservable(searchLocations, "London");
   const [location, dispatchWoeid] = useObservable(searchLocation, "44418");
@@ -60,7 +58,7 @@ const App = () => {
 
   return (
     <Container className="App" fluid="sm">
-      <BackdropSpinner display={false} />
+      <BackdropSpinner display={isLoading} />
       <LayoutSection>
         <SearchInput handleSearch={handleSearch} value={query} />
       </LayoutSection>
